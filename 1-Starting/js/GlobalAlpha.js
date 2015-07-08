@@ -4,7 +4,10 @@ window.onload = function() {
 	var ctx = theCanvas.getContext("2d");
 	if (ctx) {
 			
-		
+			ctx.globalAlpha = 1;
+			//default value
+
+
 			// Create an array of rectangles
 				
 				var rects = [
@@ -18,7 +21,15 @@ window.onload = function() {
 					{x:430, y:50, width:75, height:75 },
 				]
 				
-				
+				for(var i = 0; i<rects.length; i+=2){
+
+					ctx.fillStyle = "blue";
+					ctx.fillRect(rects[i].x, rects[i].y, rects[i].width, rects[i].height);
+
+					ctx.fillStyle = "red";
+					ctx.fillRect(rects[i+1].x, rects[i+1].y, rects[i+1].width, rects[i+1].height);
+					ctx.globalAlpha -= .3;
+				}
 
 		}
 	}
