@@ -24,6 +24,8 @@ FILE SETUP
 
 */
 
+if(Modernizr.canvas){
+	//Canvas is supported
 
 
 /*******************************************
@@ -39,8 +41,7 @@ Reminder - set the style first then draw.
 
 //Draw Rectangle here
 
-if(Modernizr.canvas){
-	//Canvas is supported
+
 	
 	var theCanvas = document.getElementById("Canvas1");
 	var ctx = theCanvas.getContext("2d");
@@ -57,12 +58,7 @@ if(Modernizr.canvas){
 	ctx.fillRect(0, 0, 50, 100);
 	
 	
-	}else {
-		//Canvas is not supported
-		alert("Canvas1 is not supported");
-		console.log("Canvas1 is not supported");
-		
-		}
+
 
 /*******************************************
 PART 2
@@ -79,30 +75,26 @@ Use the arc method
 
 //Draw Circle here
 
-if(Modernizr.canvas){
+//if(Modernizr.canvas){
 	//Canvas is supported
 	
-	var theCanvas = document.getElementById("Canvas2");
-	var ctx = theCanvas.getContext("2d");
+	var theCanvas2 = document.getElementById("Canvas2");
+	var ctx2 = theCanvas2.getContext("2d");
 	
 	//Declaring Styles
 
-	ctx.strokeStyle = "black";
-	ctx.fillStyle = "blue";
-	ctx.lineWidth = 5;
+	ctx2.strokeStyle = "black";
+	ctx2.fillStyle = "rgba(255, 0, 0, .5)";
+	ctx2.lineWidth = 2;
 
-	//Drawing of rectangle
-
-	ctx.strokeRect(0, 0, 50, 100);
-	ctx.fillRect(0, 0, 50, 100);
+	//full circle
+	ctx2.beginPath();
+	ctx2.arc(50, 50, 30, 0, 2 * Math.PI);
+	ctx2.fill();
+	ctx2.stroke();	
 	
 	
-	}else {
-		//Canvas is not supported
-		alert("Canvas2 is not supported");
-		console.log("Canvas2 is not supported");
-		
-		}
+
 
 
 /*******************************************
@@ -118,6 +110,30 @@ Height and width and color are up to you.
 
 
 //Draw Star here
+	
+	var theCanvas3 = document.getElementById("Canvas3");
+	var ctx3 = theCanvas3.getContext("2d");
+	
+	//Declaring Styles
+
+	ctx3.strokeStyle = "black";
+	ctx3.fillStyle = "yellow";
+	ctx3.lineWidth = 2;
+
+	//Star Top Point
+	//ctx3.lineJoin = "miter";
+	ctx3.beginPath();
+	ctx3.moveTo(100, 100);
+	ctx3.lineTo(125, 50);
+	ctx3.lineTo(150, 100);
+	ctx3.lineTo(200, 100);
+	ctx3.lineTo(150, 150);
+	ctx3.lineTo(200, 195);	
+	ctx3.stroke();
+
+	
+
+
 
 
 /*******************************************
@@ -175,3 +191,12 @@ You must use at least 3 different methods.
 // Draw scene here
 
 
+
+
+//End Modernizer
+}else {
+		//Canvas is not supported
+		alert("Canvas is not  by your browser.");
+		console.log("Canvas is not supported by your browser.");
+		document.getElementById('container').innerHTML("<img src='image/newbrowser.png' alt='Keep Calm, You need a better browser' />");
+		}
