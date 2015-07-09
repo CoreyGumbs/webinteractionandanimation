@@ -116,19 +116,21 @@ Height and width and color are up to you.
 	
 	//Declaring Styles
 
-	ctx3.strokeStyle = "black";
-	ctx3.fillStyle = "yellow";
-	ctx3.lineWidth = 2;
+	ctx3.strokeStyle = "green";
+	ctx3.fillStyle = "red";
+	ctx3.lineWidth = 8;
+	
+	//Star begins
 
-	//Star Top Point
-	//ctx3.lineJoin = "miter";
+	ctx3.lineJoin = "miter";
 	ctx3.beginPath();
 	ctx3.moveTo(100, 100);
-	ctx3.lineTo(125, 50);
-	ctx3.lineTo(150, 100);
-	ctx3.lineTo(200, 100);
+	ctx3.lineTo(125, 250);
+	ctx3.lineTo(30, 150);
 	ctx3.lineTo(150, 150);
-	ctx3.lineTo(200, 195);	
+	ctx3.lineTo(30, 250);
+	ctx3.closePath();
+	ctx3.fill();
 	ctx3.stroke();
 
 	
@@ -149,6 +151,30 @@ Do not overlap any other object.
 ********************************************/
 
 //Draw Umbrella top here
+
+	var theCanvas4 = document.getElementById("Canvas4");
+	var ctx4 = theCanvas4.getContext("2d");
+
+	//declaring Styles
+	ctx4.strokeStyle = "blue";
+	ctx4.fillStyle = "red";
+	ctx4.lineWidth =  5;
+
+	//position elements to center of canvas
+	ctx4.translate(ctx4.canvas.width/2, ctx4.canvas.height/2);
+	//1/2 circle/Arc
+	ctx4.beginPath();
+	ctx4.arc(0,0, 200, 0, 1 * Math.PI, true);
+
+	//bezier curves below arc
+	ctx4.moveTo(-200, 0);
+	ctx4.bezierCurveTo(-200, -20, -10, -50, 0, 0);
+	ctx4.moveTo(0,0);
+	ctx4.bezierCurveTo(0, 0, 0, -50, 200, 0);
+	
+	//fill in all elements
+	ctx4.fill();
+	ctx4.stroke();	
 
 /*******************************************
 PART 5
