@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Corey Gumbs Skrollr.js Example</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+	<header 
+  data-0="opacity: 0"
+  data-200p="opacity: 0"
+  data-260p="opacity:.5"
+  data-280p="opacity: 1"
+  >
+    <h1>Skrollr.js Example by Corey Gumbs</h1>
+  </header>
+  <!-- Slides Begin Here    -->
+  <div id="page-container">
+    <div id="slides-container">
+      <!-- Sets the "break or animation" points for each background slide and movement transition.
+      You have the choice of using pixels or percentages in the data-number attribute
+      data-number is currently set to percentages of the document. For pixels remove the letter p after the number (ie: data-150="")-->
+      <div id="slideShow"
+        data-0="transform: translate(0%, 0%)"
+        data-100p=""
+        data-150p="transform: translate(0%, -50%)"
+        data-200p=""
+        data-300p="transform: translate(0%, -50%)"
+        data-350p=""
+        data-400p="transform: translate(0%, -100%)"
+        data-500p=""
+        data-550p="transform: translate(-50%, -100%)"
+        data-600p=""
+        data-700p="transform: translate(-50%, -50%)"
+        data-750p=""
+        data-850p="transform: translate(-50%, 0)"
+      >
+      <!---first slide-->
+        <div id="firstSlide" class="slide" 
+        data-0="background-color:rgba(255, 255, 255, 1); color:rgba(0, 0, 0,1)" 
+        data-500="background-color: rgba(141, 5, 5, 1); color:(255,255,255,1)"
+        >
+          <div id="firstContent">
+            <h1 data-0="opacity:1" data-300="opacity:0">Scroll Up Slowly To Begin!</h1>
+
+            <p data-0="opacity: 0;transform:rotate(0deg) translateY(0px);font-size: 8pt"
+            data-300="opacity:1; transform:rotate(360deg) translateY(0px);font-size: 28pt"
+            data-650="opacity:1; transform:rotate(0deg) translateY(0px)"
+            data-850="opacity:1; transform:rotate(0deg) translateY(0px)"
+            data-1000="opacity:0; transform:rotate(0deg) translateY(500px)">Welcome to my Skrollr.js Example</p>
+      
+          </div>
+        </div>
+      <!--second slide-->
+        <div id="secondSlide" class="slide">
+          <div id="secondContent"
+          data-1200="transform: scaleY(0);opacity:0; background-position: 0px 0px"
+          data-1500="transform: scaleY(1);opacity:1;background-position: 0px 50px"
+          data-2500="transform: scaleY(1);opacity:1;background-position: 0px 100px"
+          data-2900="transform: scaleY(0);opacity:0;background-position: 0px 150px"
+
+          >
+           <h2>Skrollr.js is used for Paralax driven websites.</h2>
+           <p>it allows the use of animations using CSS and HTML rather than using multiple JavaScript libraries.</p>
+          </div>
+        </div>
+      <!--third slide-->
+        <div id="thirdSlide" class="slide">
+          <div id="thirdContent" data-3100="transform: translate(800px, 0px); opacity:0"
+                data-3500="transform: translate(800px, 100px); opacity:1"
+                data-3500="transform: translate(800px, 100px); opacity:1"
+                data-3900=""
+                data-4000="transform: translate(-800px, 100px); opacity:0">
+              <h1>Elements appear as you scroll.</h1>
+              <p>Using the html data-attribute you can determine the timing of elements via pixels or percentages</p>
+          </div>
+        </div>
+        <!--fourth slide-->
+        <div id="fourthSlide" class="slide">
+            <div id="fourthContent">
+              <h1 data-6000="opacity:0;" data-7500="opacity:1" data-9000="opacity:0">The End!</h1>
+              <p data-9200="opacity:0; transform: translate(0px, 100px) scale(0,0)" data-9700="opacity:0; transform: translate(0px, 100px) scale(0,0)" data-10000="opacity:1; transform: translate(0px, -100px) scale(5,5)">Created<br />By Corey Gumbs</p>
+            </div>
+        </div>
+        <!--fifth slide-->
+        <div id="fifthSlide" class="slide"></div>
+        <!--sixth slide-->
+        <div id="sixthSlide" class="slide">
+          <div id="sixthContent" data-4100="opacity:0; transform: translate(0px, 0px);background-color: rgba(230, 5, 148, 1)"
+           data-4300="opacity:1; transform: translate(0px,-500px); background-color:rgba(230, 5, 148, 1)"
+           data-4800="opacity:1; transform: translate(0px,-500px);background-color: rgba(0, 0, 0, 1)"
+          data-5200="opacity:1; transform: translate(0px,-1000px);background-color: rgba(0, 0, 0, 1)">
+            <h1>We're Moving on Up!</h1>
+            <p>Changing the direction of slides/screens is as simple as a CSS translate transform.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--helper div for scrolling. Site will not scroll without this-->
+    <div id="helper">
+      <div class="marker red"></div>
+      <div class="marker green"></div>
+      <div class="marker blue"></div>
+      <div class="marker yellow"></div>
+      <div class="marker pink"></div>
+    </div>
+
+  </div>
+<script type="text/javascript" src="js/skrollr.min.js"></script>
+
+</body>
+</html>

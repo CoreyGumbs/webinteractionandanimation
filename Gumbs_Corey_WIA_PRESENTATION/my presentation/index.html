@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Skrollr.js - JavaScript Library</title>
+
+		<meta name="description" content="A presentation given by Corey Gumbs on the Skrollr.js parallax scrolling JavaScript Library.">
+		<meta name="author" content="Corey Gumbs">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/styles/arta.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				
+      <!--Begin Slides-->
+       <!--Slide One-->
+       <section data-transition="zoom">
+       	<h1>Skrollr.Js</h1>
+       	<h2>Presented by Corey Gumbs</h2>
+       </section>
+       <!--slide 2-->
+       <section>
+	       	<section>
+	       		<h1>What is Skrollr.js?</h1>
+	       	</section>
+	       	<section data-transition="concave">
+	       		<h2>Skrollr.js is a stand alone parallax scrolling JavaScript library</h2>
+	       		<p class="fragment fade-in">It is built for mobile (Android, IOS, etc) and desktop devices.</p>
+	       	</section>
+	       	<section data-transition="zoom">
+	       		<h2> Is It Only Just For Parallax Scrolling?</h2>
+	       		<p>Nope. Skrollr.js can be used for other types of scrolling animations as well. This gives makes it a flexible tool in creating dynamic web applications.</p>
+	       	</section>
+       </section>
+       <!--slide 3-->
+       <section data-transition="fade">
+       	<h1>So Why Is It So Popular?</h1>
+       </section>
+       <!--slide 4-->
+       <section data-transition="slide">
+	       <h2 class="fragment fade-out" data-fragment-index="1">Believe it or not...</h2>
+	       	<h3 class="fragment" data-fragment-index="2">Skrollr.js is only 12kb minified.</h3>
+	       	<h4 class="fragment" data-fragment-index="3">Making it extremely efficient for even mobile applications.</h4>
+	      </section>
+	      <!--slide 5-->
+	      <section>
+	      	<h2>It's Designer Friendly</h2>
+	      	<ul style="list-style-type: none">
+	      		<li data-transition="slide-out" class="fragment" data-fragment-index="1">No JavaScript skills are needed</li>
+	      		<li class="fragment" data-fragment-index="2">uses CSS</li>
+	      		<li class="fragment slide-in" data-fragment-index="3">uses HTML</li>
+	      	</ul>
+	      </section>
+	      <!--slide 6-->
+	      <section>
+	      	<h1>Great Documentation</h1>
+	      	<p>Developer's GitHub: <a href="https://github.com/Prinzhorn/skrollr" target="_blank"> Skrollr.js Repository</a></p>
+					<p>Petr Tichy's Blog: <a href="https://ihatetomatoes.net/" target="_blank">Ihatetomatoes.com</a></p>
+					<p>Sckrollr.js Wiki: <a href="https://github.com/Prinzhorn/skrollr/wiki/In-the-wild" target="_blank">See Sites Using Skrollr.js</a></p>
+	      </section>
+	      <!--slide 7-->
+	      <section>
+	      	<h1 class="fragment shrink" data-fragment-index="1">Reason For My Choice</h1>
+	      	<p class="fragment grow" data-fragment-index="1">I chose Scrollr.js because I was interested in making more dynamic web layouts. I used squarespace.com for a client's web site and found the scrolling/parallax based web templates interesting and engaging. I just had to learn more.</p>
+	      </section>
+	      <!--slide 8-->
+	      <section>
+	      	<section>
+		      	<h1 class="fragment shrink fade-out" data-fragment-index="1">Implementation</h1>
+		      	<p class="fragment grow" data-fragment-index="1">Implementation of Sckrollr.js is rather simple.</p>
+	      	</section>
+	      	<section data-transition="zoom">
+	      		<h4>Placement of the Sckrollr.js file is at the bottom of the &lt;body&gt; tag</h4>
+	      		<pre>
+	      			<code class="fragment grow	">
+	      			&lt;body&gt; 
+
+	      			&lt;script type=&quot;text/javascript&quot; src=&quot;js/skrollr.min.js&quot;&gt;
+
+	      			&lt;/script&gt; 
+
+	      			&lt;/body&gt;
+	      			</code>
+	      		</pre>
+	      	</section>
+	      	<section>
+	      		<h3>Then Initialize the Skrollr object with the various options of your choosing.</h3>
+	      		<p>This can be placed within the body tag of the document.</p>
+	      		<pre>
+	      			<code>
+	      			&lt;body&gt; 
+
+	      			&lt;script type=&quot;text/javascript&quot; src=&quot;js/skrollr.min.js&quot;&gt;
+
+	      			&lt;/script&gt; 
+
+	      			&lt;script type=&quot;text/javascript&quot;&gt; 
+
+	      			var s = skrollr.init(); 
+
+	      			&lt;/script&gt; 
+
+	      			&lt;/body&gt;
+	      			</code>
+	      		</pre>
+	      	</section>
+	      	<section>
+	      		<h3>Or Call It From A Seperate JS File </h3>
+	      		<p>Use window.load or JQuery $(document).ready</p>
+	      		<pre>
+	      			<code>
+	      			$(document).ready(function(){ 
+
+	      				var s = skrollr.init({ 
+	      					smoothScrolling: false, //object[option]
+	      					forceHeight: true }); 	//object [option]
+
+	      			});
+	      			</code>
+	      		</pre>
+	      	</section>
+	      </section>
+	      <section>
+						<h2>Create Your Slides Using Containers</h2>
+						<pre>
+							<code>
+								&lt;div id=&quot;slides-container&quot;&gt; 
+										&lt;div id=&quot;slideShow&quot;&gt;
+
+											//this is where your content goes and creates individual parallax slides, 
+											//as well as CSS transitions and animations
+
+										&lt;/div&gt; 
+								&lt;/div&gt;
+							</code>
+						</pre>
+				</section>
+	      <section>
+	      	<h2>Now All You Have To Do Is...</h2>
+	      	<h4>Use the HTML5 data-attributes and CSS to create transitions and<br /> animations on your HTML elements.</h4>
+	      	<pre>
+	      		<code>
+	      			&lt;div id=&quot;firstContent&quot;&gt;
+
+	      					&lt;h1 
+	      					data-0=&quot;opacity:1&quot; 
+	      					data-300=&quot;opacity:0; 
+	      					transform:rotate(0deg) translateY(0px);
+	      					font-size: 8pt&quot;&gt;
+
+	      						Scroll Up Slowly To Begin!
+
+	      					&lt;/h1&gt;
+
+	      			&lt;/div&gt;
+	      		</code>
+	      	</pre>
+	      </section>
+	      <!--slide 9-->
+	      <section>
+	      	<h1>My Example</h1>
+	      </section>
+	      <!--slide 10-->
+	      <section>
+	      	<h1>
+	      		So as you can see...
+	      	</h1>
+	      	<h2>Scrollr.js is simple and easy to use...</h2>
+	      </section>
+	      <!--slide 11-->
+	      <section>
+	      	<h1>...And definitely worth looking into.</h1>
+	      </section>
+	      <!--slide 12-->
+	      <section style="font-size: 20pt">
+			      <section>
+			      	<h3>Sources:</h3>
+			      		<h4>Example Photos used via Creative Common License.</h4>
+			      	<ul>
+			      		<li>
+			      		<p>Slide #1</p>
+			      		<p>Abstract Colorful Universe Wallpaper. Digital image. Flikr.com. Tom Tennstedt, 26 Nov. 2006. Web. 20 July 2015. <a href="https://flic.kr/p/wjPLA" target="_blank">Flkr.com</a>. Increased size to 1600px x 1200px by Corey Gumbs</p>
+			      		</li>
+			      		<li>
+									<p>Slide #2</p>
+			      			<p>Vicuñas, Laguna Miscanti, Chile. Digital image. Flikr.com - Creative Commons. Dimitri B., 26 Apr. 2014. Web. 20 July 2015. <a href="https://flic.kr/p/o2pXLQ"target="_blank">Flkr.com</a></p>
+			      		</li>
+			      		<li>
+			      			<p>Slide #3</p>
+			      			<p>Lac Peyto - Panoramique. Digital image. Flickr.com - Creative Commons. Dyonis, 3 Sept. 2006. Web. 20 July 2015. <a href="https://flic.kr/p/7kUq2j" target="_blank">Flkr.com</a></p>
+			      		</li>
+			      	</ul>
+			      </section>
+			      <section>
+			      	<ul>
+			      		<li>
+			      		<p>Slide #4</p>
+			      		<p>Abandoned Storehouses. Digital image. Flickr.com - Creative Commons. Diego Torres Silvestre, 22 Sept. 2013. Web. 20 July 2015. <a href="https://flic.kr/p/g6gb9k" target="_blank">Flkr.com</a></p>
+			      		</li>
+			      		<li>
+									<p>Slide #5</p>
+			      			<p>Coffee Break. Digital image. Flickr.com - Creative Commons. Lars Erik Skrefsrud, 21 June 2013. Web. 20 July 2015. <a href="https://flic.kr/p/jzFYVM" target="_blank">Flkr.com</a></p>
+			      		</li>
+			      		<li>
+			      			<p>Slide #6</p>
+			      			<p>New York City. Digital image. Flickr.com - Creative Commons. Aurelien Guichard, 29 July 2010. Web. 20 July 2015. <a href="https://flic.kr/p/8nTEXJ" target="_blank">Flkr.com</a></p>
+			      		</li>
+			      	</ul>
+			      </section>
+			  </section>
+			  <!--end slides-->
+			</div>
+		</div>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				slideNumber: true,
+				history: true,
+				center: true,
+				mouseWheel: true,
+
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+	</body>
+</html>

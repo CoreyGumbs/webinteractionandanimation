@@ -1,0 +1,186 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+html, body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Montserrat', sans-serif;
+}
+/*------ Page Header ----- */
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 50px;
+	background-color: #333;
+	display: inline;
+	z-index: 2000;
+}
+
+header h1{
+	margin: 10px 10px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18pt;
+	color: #fff;
+}
+/*-------- Slides formatting-----*/
+#slides-container{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#slideShow {
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 200%;
+	height: 200%;
+}
+
+.slide{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 50%;
+}
+
+/*------ Slide Content ------*/
+
+#firstContent {
+
+	position: absolute;
+	top: 30%;
+	left: 40%;
+}
+
+#secondContent{
+	position: absolute;
+	top: 150px;
+	left: 100px;
+	width: 400px;
+	height: 150px;
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 5px;
+	background-color: #333;
+	color: #fff;
+	opacity: .8;
+}
+
+#thirdContent{
+
+width: 500px;
+padding: 20px;
+border-radius: 5px;
+background-color: #125bad;
+color: #ccc;
+
+}
+
+#fourthContent{
+
+	position: absolute;
+	top: 50%;
+	left: 6%;
+	color: #fff;
+}
+
+#fourthContent p {
+	position: relative;
+	left: 200px;
+}
+
+#sixthContent {
+	position: absolute;
+	bottom: 10px;
+	width: 500px;
+	padding: 25px;	
+	color: #fff;
+}
+
+
+/* ---------- Individual Slides Format ----------*/
+
+#firstSlide{
+/*background-image: url('../images/tomt_universe.jpg');
+background-size: cover;*/
+}
+
+#secondSlide{
+background-image: url('../images/DimitriB_Mountain.jpg');
+background-size: container;
+transform: translate(0, 100%);
+-ms-transform: translate(0, 100%); /* IE 9 */
+-webkit-transform: translate(0, 100%); /* Chrome, Safari, Opera */
+}
+
+#thirdSlide{
+background-image: url('../images/dyonis_mount.jpg');
+background-size: cover;
+transform: translate(0, 200%);
+-ms-transform: translate(0, 200%); /* IE 9 */
+-webkit-transform: translate(0, 200%); /* Chrome, Safari, Opera */
+}
+
+#fourthSlide{
+background-image: url('../images/diegoS_storehouses.jpg');
+background-size: cover;
+transform: translate(100%, 0);
+-ms-transform: translate(100%, 0); /* IE 9 */
+-webkit-transform: translate(100%, 0); /* Chrome, Safari, Opera */
+}
+
+#fifthSlide{
+background-image: url('../images/lars_coffeebreak.jpg');
+background-size: cover;
+transform: translate(100%, 100%);
+-ms-transform: translate(100%, 100%); /* IE 9 */
+-webkit-transform: translate(100%, 100%); /* Chrome, Safari, Opera */
+}
+
+#sixthSlide{
+background-image: url('../images/Aurelien_NYC.jpg');
+background-size: cover;
+transform: translate(100%, 200%);
+-ms-transform: translate(100%, 200%); /* IE 9 */
+-webkit-transform: translate(100%, 200%); /* Chrome, Safari, Opera */
+}
+
+
+/*------- helper div formatting --------*/
+
+#helper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 900%;
+    width: 20px;
+    visibility: hidden;
+}
+
+.marker {
+    height: 25%;
+    width: 100%;
+}
+
+.red {
+    background-color: red;
+}
+
+.green{
+    background-color: green;
+}
+.blue {
+    background-color: blue;
+}
+.yellow {
+    background-color: yellow;
+}
+
+.pink {
+    background-color: pink;
+}

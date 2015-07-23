@@ -1,0 +1,8 @@
+$(document).ready(function(){
+
+	var s = skrollr.init({
+
+			smoothScrolling: false,
+			forceHeight: true
+	});
+});
