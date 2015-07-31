@@ -1,0 +1,546 @@
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+@import url(http://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700);
+
+
+/*---- Global Formatting-----*/
+body, html {
+	height: 100%;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #000;
+}
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	border: none;
+	outline: 0;
+}
+a:link {
+    color: #fff;
+}
+a:visited {
+    color: #ddd;
+}
+
+/* mouse over link */
+a:hover {
+    color: #ff0000;
+}
+
+/* selected link */
+a:active {
+    color: #da2197;
+}
+/*--Header Formatting---*/
+
+#logo {
+	position: relative;
+	top: 5px;
+	left: 25px;
+	width: 79px;
+	height: 62px;
+	border:0px solid #fff;
+}
+
+header {
+	width: 100%;
+	height: 75px;
+	position: fixed;
+	background-color: #000;
+	color: #fff;
+	z-index: 1999;
+}
+
+nav ul {
+	position: absolute;
+	top: 0;
+	right: 100px;
+}
+
+nav ul li{
+	margin: 15px 10px;
+	display: inline-block;
+	list-style-type: none;
+	font-family: 'Poiret One', cursive;
+}
+
+nav li:first {
+	background-image: url(../images/DL_logo.png);
+}
+
+/*---- Slide Global Formatting---*/
+
+.bckRnd {
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+
+}
+
+.slideContainer {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	background: none;
+	background-color: rgba(0,0,0, .5 );
+}
+
+.slideContainerSolid {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	background: none;
+}
+
+.slideContent {
+	max-width: 960px;
+	min-height: 600px;
+	margin: 150px auto 0 auto;
+	vertical-align: middle;
+	color: #ebebeb;
+	padding: 0 8%;
+	text-align: center;
+}
+
+.slideContent h1, h2, h3 {
+	font-family: 'Poiret One', cursive;
+}
+
+/*----Slide 1 Beings ----*/
+
+#slide-1 .bckRnd {
+	background-image: url(../images/couple1.jpg);
+}
+
+#slide-1 .slideContainer {
+	background-color: rgba(0,0,0, .5 );
+}
+
+#slide-1 .slideContent h1 {
+	margin-top: 300px;
+	font-size: 50pt;
+}
+
+#slide-1 .slideContent p{
+	margin: ;
+}
+
+/* Animated Bouncing Arrow*/
+#slide-1 .bckRnd a{
+	
+	display: block;
+	width: 100px;
+	height: 100px;
+	margin: 20% auto;
+	border: 2px solid rgba(185,185,185, .3);
+	border-radius: 100%;
+	background-color: rgba(0,0,0, .3);
+	-webkit-animation-name: bounce;
+  -moz-animation-name: bounce;
+  -o-animation-name: bounce;
+  animation-name: bounce;
+
+  -webkit-animation-fill-mode:both;
+  -moz-animation-fill-mode:both;
+  -ms-animation-fill-mode:both;
+  -o-animation-fill-mode:both;
+
+  animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+
+  animation-fill-mode:both;
+  -webkit-animation-duration:2s;
+  -moz-animation-duration:2s;
+  -ms-animation-duration:2s;
+  -o-animation-duration:2s;
+  animation-duration:2s;
+
+}
+/*----arrow positioning----*/
+
+#slide-1 .slideContent img{
+
+	margin: 30px auto;
+}
+
+/* Arrow Bounce Animation Keyframes*/
+
+@-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 40% {-webkit-transform: translateY(8px);}
+    60% {-webkit-transform: translateY(16px);}
+}
+ 
+@-moz-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+    40% {-moz-transform: translateY(8x);}
+    60% {-moz-transform: translateY(16px);}
+}
+ 
+@-o-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+    40% {-o-transform: translateY(8px);}
+    60% {-o-transform: translateY(16px);}
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(8px);}
+    60% {transform: translateY(16px);}
+}
+
+
+/*------End Homepage Slide 1----*/
+
+/*---- infoBlock Page Dividers ----*/
+
+.infoBlock .bckRnd {
+	text-align: center;
+	height: 200px;
+}
+
+.infoBlock .slideContainer {
+	min-height: 800px;
+}
+
+.infoBlock .slideContent {
+	margin: 5% auto;
+	height: 250%;
+}
+
+.infoBlock .slideContent h2 {
+	
+	font-size: 30pt;
+	
+}
+
+.infoBlock .slideContent p{
+	
+	font-size: 16pt;
+	
+}
+
+
+
+/*---end of InfoBlock Page Dividers------*/
+
+/*---Logo Page Slide 2------*/
+#slide-2 .bckRnd {
+	background-image: url(../images/dateNight.jpg);
+}
+
+#slide-2 .slideContainer {
+	background-color: rgba(0,0,0, .8);
+}
+
+#slide-2 #bgLogo {
+	margin: 100px auto;
+}
+
+/*---- end Logo Page Slide 2----*/
+
+
+/*----Slide 3 How it works-----*/
+#slide-3 .slideContainer {
+	background-color: rgba(255,255,255, 1);
+
+}
+
+#slide-3 .slideContent {
+	margin: 75px auto 0 auto;
+	font-family: 'Source Serif Pro', serif;
+	color: #000;
+	text-align: left;
+}
+
+#slide-3 .slideContent h1 {
+	width: 100%;
+	font-family: 'Source Serif Pro', serif;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #ccc;
+	color: rgba(185,3,0, 1);
+}
+
+#slide-3 .slideContent h1:nth-child(even){
+	margin: 50px 0;
+	text-align: right;
+}
+
+#slide-3 #workText {
+	position: absolute;
+	top: 190px;
+	right: 250px;
+	width: 500px;
+	margin: 0px 30px 0 0;
+	padding: 10px;
+	border: 0px solid #000;
+	color: #555;
+
+}
+#slide-3 #canvasHolder{
+width: 350px;
+margin-left: 15px;
+padding: 10px;
+text-align: center;
+
+}
+canvas {
+	width: 300px;
+	height: 300px;
+}
+
+#slide-3 #pieTitle {
+	margin: 20px 30px;
+	font: italic small-caps bold 10px Arial, Helvetica, sans-serif;
+	color: #555;
+}
+#memBenefits {
+	width: 900px;
+	border:1px solid black;
+}
+
+#lockDiv, #eventDiv {
+	width: 420px;
+	height: 150px;
+	margin: 0px 30px 50px auto;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	float: left;
+	cursor: pointer;
+	-webkit-box-shadow: 0px 5px 0px 5px #ccc;  
+  -moz-box-shadow:   0px 5px 0px 5px #ccc;  
+  box-shadow:  0px 5px 0px 5px #ccc; 
+}
+
+#commDiv, #matchDiv {
+	width: 420px;
+	height: 150px;
+	margin: 0px 30px 50px auto;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	float: right;
+	cursor: pointer;
+	-webkit-box-shadow: 0px 5px 0px 5px #ccc;  
+  -moz-box-shadow: 0px 5px 0px 5px #ccc;  
+  box-shadow: 0px 5px 0px 5px #ccc;  
+}
+
+#lockDiv h3, #commDiv h3, #eventDiv h3, #matchDiv h3 {
+	margin: 0 20px;
+	font-size: 16pt;
+	font-weight: 800;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #ccc;
+	color: #666;
+}
+
+#lockDiv p, #commDiv p, #eventDiv p, #matchDiv p {
+	font-size: 12pt;
+	margin-top: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666;
+}
+#imgSlide1, #imgSlide2, #imgSlide3, #imgSlide4 {
+	position: relative;
+	top: 5px;
+	left:0;
+	margin-top: 15px;
+	z-index: 1;
+
+}
+
+#lockSlide, #commSlide, #eventSlide, #matchSlide {
+ 	position: relative;
+ 	top: -100px;
+ 	left: 50px;
+	margin:10px auto 0px auto;
+	width:320px;
+	height:100px;
+	text-align: left;
+	display:none; 
+}
+/*--------- Slide 3 End---------*/
+/*------- Slide 4 Begins---------*/
+#slide-4 .bckRnd {
+	background-image: url(../images/couple4.jpg);
+}
+
+#slide-4 .slideContainer {
+	background-color: rgba(25,36,119, .7);
+}
+
+#slide-4 .slideContent {
+	text-align: center;
+}
+
+
+.thumbnails {
+	width: 750px;
+	font-size: 0;
+	margin: 0 auto;
+	padding: 0;
+	border: 0px solid green;
+	text-align: center;
+}
+
+.thumbnails img {
+	width: 150px;
+	height: 150px;
+}
+
+.thumbnails a:hover {
+	background-color: #000;
+	opacity: .5;
+}
+/*------end of slide 4----*/
+/*------begin slide 5-----*/
+#slide-5 .slideContainer {
+	background-color: rgba(218, 33, 151, .1);
+}
+
+#slide-5 .slideContent {
+
+	max-height: 600px;
+}
+.videoContainer .{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullScreenVid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+@media (min-aspect-ratio: 16/9) {
+  .fullScreenVid {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullScreenVid {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .videoContainer {
+    background: url('../img/videoframe.jpg') center center / cover no-repeat;
+  }
+
+  .fullScreenVid {
+    display: none;
+  }
+}
+/*--------Slide 5 ends------*/
+/*---- Slide 6 begins -------*/
+#slide-6 .bckRnd {
+	background-color: #000;
+}
+#slide-6 h1 {
+	font-size: 60pt;
+}
+#slide-6 h2 {
+	font-size: 38pt;
+}
+
+
+#slide-6 form {
+	width: 600px;
+	height: 300px;
+	padding: 15px;
+	margin: 100px auto;
+	background-color: rgba(255,255,255, .9);
+	border: 0px solid red;
+	border-radius: 5px;
+	color: #000;
+}
+#slide-6  form label{
+width: 400px;
+margin: 10px 20px;
+text-align: left;
+float: left;
+clear: right;
+}
+
+#slide-6 form input {
+width: 550px;
+height: 35px;
+margin: 0px 20px 20px 20px;	
+border: 1px solid #d7d7d7;
+float: left;
+clear: right;
+border-radius: 5px;
+
+}
+
+#slide-6 button {
+width: 200px;
+height: 50px;
+margin: 20px auto;
+border: none;
+border-radius: 5px;
+outline: 0;
+background-color: #29acef;
+color: #fff;
+}
+
+#slide-6 button:hover {
+background-color: #333;
+
+}
+
+
+#slide-6 form input[placeholder]{
+	padding-left: 10px;
+}
+
+
+/*---- Free Icon License attribution Formatting-------*/
+#credit{
+	width: 450px;
+	color: #fff;
+	font-size: 8pt;
+	margin: 400px auto 0 auto;
+}
+
+#credit a {
+	color: #fff;
+}
+
+#credit a:hover {
+	color: red;
+}
+
+
+/*----Author Credit----*/
+#author {
+	width: 960px;
+	color: #fff;
+	font-size: 10pt;
+	margin: 20px auto;
+
+}
+
+
+

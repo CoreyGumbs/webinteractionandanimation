@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DateLink.com: Dating For Professionals</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="includes/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/map.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="includes/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="includes/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/Chart.min.js"></script>
+	<script type="text/javascript" src="includes/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+	<script type="text/javascript" src="includes/farinspace/jquery.imgpreload.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+
+<!--Navigation Begins -->
+<header data-0="background-color: rgba(0,0,0,0)" data-100="background-color: rgba(0,0,0,1);">
+	<nav id="navBar">
+		<div id="logo">
+			<img src="images/DL_logo.png" height="62" width="79">
+		</div>
+		<ul 
+		data-0="opacity: 0" 
+		data-100="opacity:1"
+
+		>
+			<li><a href="#">Home</a></li>
+			<li><a href="#slide-3">How does it work?</a></li>
+			<li><a href="#slide-4">Profiles</a></li>
+			<li><a href="#slide-5">Events</a></li>
+			<li><a href="#slide-6">Join</a></li>
+		</ul>
+	</nav>
+</header>
+<!--Navigation Ends-->
+<!--Content Begins-->
+<main>
+	<!--Homepage/Slide#1 Begins-->
+	<section id="slide-1" class="homeSlide"
+	 data-anchor-target="#slide-1">
+		<div class="bckRnd"
+		data-center = "background-position: 50% 0px"
+		data-top-bottom = "background-position: 50% -150px"
+		>
+			<div class="slideContainer">
+				<div class="slideContent"
+				data-0="opacity:1; transform: translateY(0px)"
+				data-400="opacity:0; transform: translateY(150px)">
+				<h1>Soul Mates Are Hard To Find.</h1>
+		
+				<a href="#slide-2">
+				<img src="images/arrow.png" height="46" width="32"></a>
+			
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Hompage/Slide #1 ends -->
+	<!--Red Header Section - It repeats between every content slide -->
+	<section class="infoBlock">
+			<div class="bckRnd" 
+			data-bottom-center="background-color: rgba(16,12,11, 1)" 
+			data-center-center="background-color:rgba(185,3,0, 1)"
+			>
+				<div class="slideContainerSolid">
+					<div class="slideContent"
+					data-center-top="opacity:1"
+					data-top-bottom="opacity: 0"
+
+					>
+							<h2>Which Makes It Even Harder For Professionals.</h2>
+	
+					</div>
+				</div>
+			</div>
+	</section>
+	<!--Slide #2 Logo Jumbotron page begins -->
+	<section id="slide-2"  data-anchor-target="#slide-2">
+		<div class="bckRnd" 
+			data-center="background-position: 0px 50%;" 
+			data-bottom-top="background-position: 0px 40%;" 
+			data-top-bottom="background-position: -20px 50%;"
+		>
+			<div class="slideContainer">
+				<div class="slideContent">
+					<h1
+					data-bottom="transform: scaleY(0) translateY(-450px);opacity:0"
+					data-center-bottom="transform: scaleY(1) translateY(0px);opacity:1"
+					>Introducing a dating community only for working professionals.</h1>
+					<div id="bgLogo"
+					data-bottom-bottom="opacity:0;transform:translateY(0px)"
+					data-center="opacity:1;transform:translateY(50px)"
+					data-top="opacity:1;transform:translateY(250px)"
+					>
+					<img src="images/logo_lg.png" height="217" width="951" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--Slide 2 ends-->
+	<section class="infoBlock">
+			<div class="bckRnd" 
+			data-bottom-center="background-color: rgba(16,12,11, 1)" 
+			data-center-center="background-color:rgba(185,3,0, 1)"
+			>
+				<div class="slideContainerSolid">
+					<div class="slideContent"
+					data-center-top="opacity:1"
+					data-top-bottom="opacity: 0"
+					>
+							<h2>How Does It Work?</h2>
+					</div>
+				</div>
+			</div>
+	</section>
+	<!--Slide #3 Site exlpination page begins-->
+	<section id="slide-3">
+		<div class="bckRnd"
+        data-center="background-position: 50% 0px;"
+        data-bottom-top="background-position: 50% 100px;"
+        data-top-bottom="background-position: 80% -100px;"
+        data-anchor-target="#slide-3"
+    >	
+    	<div class="slideContainer">
+    		<div class="slideContent">
+    		<h1>DateLink: Making Dating Easy Again. </h1>
+    			<!--Canvas and Chart.js-->
+    			<div id="canvasHolder">
+	    			<canvas id="canvas">
+	    			<img src="" alt="Professional's Excuses Chart" id="canvasImg" height="400" width="400">
+	    				Your Browser Does Not Support Canvas.
+	    			</canvas>
+	    			<p id="pieTitle">Working Professional's Reasons For Not Dating</p>
+    			</div>
+    			<!--Chart.js ends-->
+    			<div id="workText">
+		    		<p>Dating is an already difficult process. It can be time consuming with little return or rewards, especially for people with limited time. 
+		    		Many working professionals for go seeking relationships because of this. </p>
+		    		<p>I mean, who really has time to waste on a "catfish" when there is money to make?!</p>
+						<p>DateLink offers an exclusive solution for working professionals utilizing both technology and tools to help streamline dating into their busy schedules.</p>
+					</div>
+						<h1>Membership Priveleges </h1>
+						<div id="lockDiv">
+							<h3>Selective Membership</h3>
+							<div>
+								<img id="imgSlide1" src="images/lock.png" height="90" width="90">
+							</div>
+							<div id="lockSlide">
+								<p>All new members go through and extensive vetting process.This helps us filter out those "catfish" and improve your search on our platform. </p>
+							</div>
+						</div>
+						<div id="commDiv">
+							<h3>Communication</h3>
+							<div>
+								<img id="imgSlide2" src="images/communication.png" height="90" width="90">
+							</div>
+							<div id="commSlide">
+								<p>We utilize the newest of technology to help make communication more efficient. The DateLink video conferencing, chat rooms, and message system make connecting easy. </p>
+							</div>
+						</div>
+						<div id="eventDiv">
+							<h3>Events, Functions, &amp; Meet-Ups</h3>
+							<div>
+								<img id="imgSlide3" src="images/party.png" height="90" width="90">
+							</div>
+							<div id="eventSlide">
+								<p>Attend exclusive members only events and meet-ups. Meet new potentials or set-up a first date in a fun, safe, and comfortable setting. </p>
+							</div>
+						</div>
+						<div id="matchDiv">
+							<h3>Match Making</h3>
+							<div>
+								<img id="imgSlide4" src="images/match.png" height="90" width="90">
+							</div>
+							<div id="matchSlide">
+								<p>Find people with similar interest, occupations, goals, aspirations and much more with our match-making service. It's free with your membership.</p>
+							</div>	
+						</div>
+    		</div>
+    	</div>
+    </div>
+	</section>
+	<!--Slide #3 ends-->
+	<section class="infoBlock">
+			<div class="bckRnd" 
+			data-bottom-center="background-color: rgba(16,12,11, 1)" 
+			data-center-center="background-color:rgba(185,3,0, 1)"
+			>
+				<div class="slideContainerSolid">
+					<div class="slideContent"
+					data-center-top="opacity:1"
+					data-top-bottom="opacity: 0"
+					>
+							<h2>Search Through Professional Profiles.</h2>
+					</div>
+				</div>
+			</div>
+	</section>
+	<!--slide #4 begins Gallery Page -->
+	<section id="slide-4"  data-anchor-target="#slide-4">
+		<div class="bckRnd" 
+			data-center="background-position: 50% 0px;" 
+			data-bottom-top="background-position: 50% 100px;" 
+			data-top-bottom="background-position: 50% -100px;"
+		>
+			<div class="slideContainer">
+				<div class="slideContent">
+					
+						<h1>Meet Some Of Our Members</h1>
+						<!--Gallery Begins-->
+							<div class="thumbnails">
+								<a class="fancybox" rel="group1" href="images/1_fullsize.jpg" title="Family">
+									<img src="images/1_thumbnail.jpg" height="125" width="125" alt="">
+								</a>
+								<a class="fancybox" rel="group1" href="images/2_fullsize.jpg" title="Corey Gumbs: Web Developer New York, N.Y."><img src="images/2_thumbnail.jpg" alt="Corey Gumbs: Web Developer New York, N.Y."></a>
+								<a class="fancybox" rel="group1" href="images/3_fullsize.jpg" title="Guys Night Out 2015"><img src="images/3_thumbnail.jpg"  alt="Guys Night Out 2015"></a>
+								<a class="fancybox" rel="group1" href="images/4_fullsize.jpg"  title="A Couple"><img src="images/4_thumbnail.jpg"  alt="A Couple"></a>
+								<a class="fancybox" rel="group1"  href="images/5_fullsize.jpg" title="Jamillah Turner: Bartender"><img src="images/5_thumbnail.jpg"  alt="Jamillah Turner: Bartender"></a>
+								<a class="fancybox" rel="group1" href="images/6_fullsize.jpg" title="Friends Bugging Out."><img src="images/6_thumbnail.jpg" alt="Friends Bugging Out."></a>
+								<a class="fancybox" rel="group1"  href="images/7_fullsize.jpg" title="Party Time."><img src="images/7_thumbnail.jpg" alt="Party Time."></a>
+								<a class="fancybox" rel="group1" href="images/8_fullsize.jpg"title="God Times." ><img src="images/8_thumbnail.jpg"  alt="Good Times."></a>
+								<a class="fancybox" rel="group1" href="images/9_fullsize.jpg"title="The Stupid Drunk Friend" ><img src="images/9_thumbnail.jpg"  alt="The Stupid Drunk Friend."></a>
+								<a class="fancybox" rel="group1" href="images/10_fullsize.jpg"title="Duck Lips Selfies" ><img src="images/10_thumbnail.jpg"  alt="Duck Lips Selfies."></a>
+							</div>
+						<!--Gallery ends-->
+			</div>
+		</div>
+	</section>
+	<!--Slide #4 Ends -->
+	<section class="infoBlock">
+			<div class="bckRnd" 
+			data-bottom-center="background-color: rgba(16,12,11, 1)" 
+			data-center-center="background-color:rgba(185,3,0, 1)"
+			>
+				<div class="slideContainerSolid">
+					<div class="slideContent"
+					data-center-top="opacity:1"
+					data-top-bottom="opacity: 0"
+					>
+							<h2>Attend DateLink Events and Functions</h2>
+					</div>
+				</div>
+			</div>
+	</section>
+	<!--Slide # 5 HTML5 Video Background and Interactive map page Begins-->
+	<section id="slide-5" data-anchor-target="#slide-5">
+		<div class="bckRnd">
+			<div class="slideContainer">
+				<div class="slideContent">
+				<!--HTML5 Video Begins-->
+					<div class="videoContainer">
+						<video loop autoplay muted class="fullScreenVid">
+						<source src="vid/FullSizeRender-1.mp4" type="video/mp4" >
+						<source src="vid/FullSizeRender.ogv" type="video/ogv">
+						Your Browser Does Not Support HTML5 Video Player.
+						</video>
+					</div>
+					<!--HTML5 video ends-->
+					<!--Interactive map begins-->
+					<div class="map_container"
+					data-bottom-center="transform: scaleY(0) translateY(-450px);opacity:0"
+					data-center-top="transform: scaleY(1) translateY(0px);opacity:1"
+	
+					>
+						<a class="dot" style="top: 160px; left: 30px;" state="CA" city="sanfransico"></a>
+						<a class="dot" style="top: 200px; left: 50px;" state="CA" city="losangeles"></a>
+						<a class="dot" style="top: 235px; left: 85px;" state="CA" city="sandiego"></a>
+						<a class="dot" style="top: 360px; right: 160px;" state="FL" city="miami"></a>
+						<a class="dot" style="top: 310px; right: 175px;" state="FL" city="orlando"></a>
+						<a class="dot" style="top: 270px; right: 190px;" state="GA" city="atlanta"></a>
+						<a class="dot" style="top: 190px; right: 110px;" state="DC" city="washingtondc"></a>
+						<a class="dot" style="top: 150px; right: 110px;" state="NY" city="newyork"></a>
+						<a class="dot" style="top: 120px; right: 80px;" state="MA" city="boston"></a>
+						
+						<h1>Find An Event:</h1>
+						<form id="mapForm" name="mapForm" class="form_usa" method="post" action="">
+						<select name="usa" id="usa">
+							<option value="CA">California</option>
+							<option value="FL">Florida</option>
+							<option value="GA">Georgia</option>
+							<option value="DC">Washington D.C.</option>
+							<option value="NY">New York</option>
+							<option value="MA">Massachusetts</option>
+							<option value="ALL" selected="selected">Show All States</option>
+						</select>
+					</form>
+					<div class="detail_container">
+						<div class="city_detail">
+							<h3>Choose A City</h3>
+							<p>Select A City To See Our Events</p>
+						</div>
+					</div>
+					</div>
+					<div class="city_detail_container">
+						<!-- City -->
+						<div class="city_detail" id="sanfransico">
+							<div class="city_info">
+								<h2>San Fransico</h2>
+								<h3>California</h3>
+								<p>July 31, 2015 @ 7 p.m.</p>
+								<p>Come join us for our first speed dating and networking event. There will be food, entertianment, and plenty of fun. Log-in to get all the details</p>
+							</div>
+						</div>
+						<!-- City -->
+						<div class="city_detail" id="losangeles">
+							<div class="city_info">
+								<h2>Los Angeles</h2>
+								<h3>California</h3>
+								<p>August 3, 2015 @ 9 p.m.</p>
+								<p>Come join us for our monthly networking event. There will be food, entertianment, and plenty of fun. Log-in to get all the details</p>
+							</div>
+						</div>
+						<!-- City -->
+						<div class="city_detail" id="sandiego">
+							<div class="city_info">
+								<h2>San Diego	</h2>
+								<h3>California</h3>
+								<p>August 15, 2015 @ 10 p.m.</p>
+								<p>Free Concert. John Mayer Performing with special guest to be announced. Log-in for more details.</p>
+							</div>
+						</div>
+						<!-- City -->
+						<div class="city_detail" id="miami">
+							<div class="city_info">
+								<h2>Miami</h2>
+								<h3>Florida</h3>
+								<p>August 21, 2015 @ 3 p.m.</p>
+								<p>Annual Pool Party. The Dont Miss EVENT OF THE YEAR! Come get your sexy on. BBQ, drinks, music and fun will be waiting for you. 21 years and older event.</p>
+							</div>
+						</div>
+						<!-- City -->
+						<div class="city_detail" id="orlando">
+							<div class="city_info">
+								<h2>Orlando</h2>
+								<h3>Florida</h3>
+								<p>August 17-20, 2015 @  Weekend Event</p>
+								<p>Disney For Adults. Come and have fun as wel bring you the Disney For Adults getaway. Mix and mingle with other singles. Parties, food, and fun are all planned. </p>
+							</div>
+							<div class="clear_both"></div>
+						</div>
+						<!-- City -->
+						<div class="city_detail" id="atlanta">
+							<img class="city_photo" src="images/cities/johannesburg.jpg" alt="johannesburg" width="75" height="75" />
+							<div class="city_info">
+								<h2>Orlando</h2>
+								<h3>Florida</h3>
+								<p>August 17-20, 2015 @  Weekend Event</p>
+								<p>Disney For Adults. Come and have fun as wel bring you the Disney For Adults getaway. Mix and mingle with other singles. Parties, food, and fun are all planned. </p>
+							</div>
+							<div class="clear_both"></div>
+						</div>
+						<!-- City -->
+						<div class="city_detail" id="washingtondc">
+							<div class="city_info">
+								<h2>Washington D.C.</h2>
+								<h3>Washington D.C.</h3>
+								<p>September 23, 2015 @ 12 pm</p>
+								<p>Our Business Networking Day Party was such a huge success we had to do it again. Come network with other business professionals.</p>
+							</div>
+							<div class="clear_both"></div>
+						</div>
+						<!-- City -->
+						<div class="city_detail" id="newyork">
+							<div class="city_info">
+								<h2>New York City</h2>
+								<h3>New York</h3>
+								<p>December 31, 2015 @ 9 p.m.</p>
+								<p>We couldn't miss the biggest party of the year and neither should you. We rented one of the most luxurious ballrooms in the country and  can't wait to get down. </p>
+							</div>
+							<div class="clear_both"></div>
+						</div>
+						<!-- City -->
+						<div class="city_detail" id="boston">
+							<div class="city_info">
+								<h2>Boston</h2>
+								<h3>Massachusetts</h3>
+								<p>November 13, 2015 @ 6 p.m.</p>
+								<p>Happy Hour Meet and Greet. Come join us for some drinks and cheers. Meet new people and make new friends. You just dont know who may know your name. </p>
+							</div>
+							<div class="clear_both"></div>
+						</div>
+					</div>
+					<!--Interactive Map Ends-->
+				</div>
+			</div>
+		</div>			
+	</section>
+	<!-- SLide #5 ends-->
+	<section class="infoBlock">
+			<div class="bckRnd" 
+			data-bottom-center="background-color: rgba(16,12,11, 1)" 
+			data-center-center="background-color:rgba(185,3,0, 1)"
+			>
+				<div class="slideContainerSolid">
+					<div class="slideContent"
+					data-center-top="opacity:1"
+					data-top-bottom="opacity: 0"
+					>
+							<h2>Join Now!</h2>
+					</div>
+				</div>
+			</div>
+	</section>
+	<!-- Slide #6 begins-->
+	<section id="slide-6" data-anchor-target="#slide-6">
+		<div class="bckRnd">
+		<div class="slideContainer">
+			<div class="slideContent">
+				<h1>Become A Member.</h1>
+				<h2>Sign Up Today!</h2>
+				<form>
+					<label class="formLabel">Name:</label>
+					<input type="text" name="name" id="nameInput" placeholder="Enter Your Name">
+					<label class="formLabel">Email:</label>
+					<input type="text" name="name" id="emailInput" placeholder="Enter Your Email">
+					<button>Sign Up</button>
+				</form>
+			</div>
+		<div>
+		</div>
+	</section>
+	<!-- Free Icon usage author credit-->
+	<div id="credit">Some Icons were made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
+<div id="author"><p>Web Site designed and built by Corey Gumsb | WIA Final Project July 2015 | Full Sail University Web Design and Development B.S. program</p></div>
+	<!--Slide #6 ends-->
+</main>
+<script type="text/javascript" src="includes/numeral.min.js"></script>
+<script type="text/javascript" src="includes/jquery.waypoints.min.js"></script>
+<script type="text/javascript" src="js/skrollr.min.js"></script>
+</body>
+</html>
